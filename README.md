@@ -1,15 +1,17 @@
-# Cat's Cradle — Neon Hand Strings
+# ✦ Sparkling Hands
 
-An interactive in-browser art toy that turns your hands into a glowing **cat's cradle** of neon strings using your webcam. It uses [MediaPipe Hands](https://google.github.io/mediapipe/solutions/hands.html) for real-time hand tracking and [p5.js](https://p5js.org/) for rendering.
+An interactive in-browser art toy that turns your hands into glowing neon strings, sparks and fireworks. Uses [MediaPipe Hands](https://google.github.io/mediapipe/solutions/hands.html) for real-time hand tracking and [p5.js](https://p5js.org/) for rendering.
 
-> Show both hands to the camera. Strings appear between matching fingertips. Touch them. Make sound. Save GIFs of your friends pretending to be wizards.
+> Show both hands to the camera. Strings appear between matching fingertips. Touch them. Hear them. Save GIFs of your friends pretending to be wizards.
+
+**🌐 Live demo:** enable GitHub Pages on this repo (Settings → Pages → Source: `main` / root). The site will live at `https://munire-alkan.github.io/sparkling-hands/`.
 
 ---
 
 ## ✦ Features
 
 - **5 visual modes** — cycle with `M`
-  - **Cradle** — original neon cat's cradle strings between matching fingertips
+  - **Cradle** — neon cat's-cradle strings between matching fingertips
   - **Lightning** — jagged electric bolts
   - **Galaxy** — orbital particles around fingertips
   - **Fireworks** — continuous spark trails + explosive bursts on touch
@@ -20,7 +22,7 @@ An interactive in-browser art toy that turns your hands into a glowing **cat's c
 - **Video recording** — record WebM with `R`
 - **Live FPS counter**
 - **Settings panel** — particle density, string thickness, motion blur, touch threshold, volume
-- **Keyboard shortcuts + on-screen toolbar**
+- **On-screen toolbar + keyboard shortcuts**
 - **Camera-feed peek** — see yourself behind the art with `C`
 - CRT scanlines, vignette, and corner brackets for that arcade-cabinet vibe
 
@@ -88,10 +90,9 @@ All third-party libraries are loaded from CDN. No installation required.
 ## 📁 Project structure
 
 ```
-cats-cradle-neon/
+sparkling-hands/
 ├── index.html       # the entire app
 ├── README.md
-├── LICENSE
 └── .gitignore
 ```
 
@@ -100,9 +101,3 @@ cats-cradle-neon/
 ## 🔒 Privacy
 
 Everything runs **locally in your browser**. The webcam stream never leaves your machine. There is no analytics, no telemetry, no server.
-
----
-
-## 📝 License
-
-[MIT](./LICENSE)

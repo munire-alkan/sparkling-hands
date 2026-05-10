@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cat's Cradle — Neon Hand Strings</title>
-<meta name="description" content="An interactive WebGL/p5.js art toy that turns your hands into a glowing neon cat's cradle using MediaPipe hand tracking.">
+<title>Sparkling Hands — Neon Hand Strings</title>
+<meta name="description" content="Sparkling Hands — an interactive p5.js art toy that turns your hands into glowing neon strings, sparks and fireworks using MediaPipe hand tracking.">
 <meta name="theme-color" content="#000814">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -407,7 +407,7 @@
   <div id="corner-br"></div>
 
   <div id="ui">
-    <h1>✦ Cat's Cradle ✦</h1>
+    <h1>✦ Sparkling Hands ✦</h1>
     <div id="status">Click anywhere to enable camera</div>
   </div>
 
@@ -472,7 +472,7 @@
   </div>
 
   <div id="splash">
-    <h1>CAT'S CRADLE</h1>
+    <h1>SPARKLING HANDS</h1>
     <p>neon hand strings · webcam art toy</p>
     <button class="start-btn">START ▸</button>
   </div>
@@ -1068,7 +1068,7 @@ function takeScreenshot() {
   if (!p5Canvas) return;
   try {
     const link = document.createElement('a');
-    link.download = `cats-cradle-${Date.now()}.png`;
+    link.download = `sparkling-hands-${Date.now()}.png`;
     link.href = p5Canvas.toDataURL('image/png');
     link.click();
     toast('SNAPSHOT SAVED');
@@ -1117,7 +1117,7 @@ function toggleRecording() {
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `cats-cradle-${Date.now()}.webm`;
+      a.download = `sparkling-hands-${Date.now()}.webm`;
       a.click();
       setTimeout(() => URL.revokeObjectURL(url), 2000);
       toast('VIDEO SAVED');
